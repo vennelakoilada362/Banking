@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <title>Contact Us</title>
+    <title>CB | Support</title>
     <link rel="stylesheet" href="./css/contact.css" />
 </head>
 
@@ -41,7 +41,7 @@
 
     }
 
-    .b1{
+    .b1 {
         padding: 1em;
     }
     </style>
@@ -72,26 +72,27 @@
             <div class="b1">
 
                 <p>
-                    <h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6> Veritatis,
-                    temporibus exercitationem tempore harum ullam sit beatae labore veniam
-                    elit.
-                    
-                    Veritatis, temporibus exercitationem tempore harum ullam sit beatae
-                    labore veniam
-                    <b>officia hic mollitia ab culpa voluptatem natus dolore incidunt
-                        earum </b>
-                    </p>
-                    <hr>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Send Your Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <input type="submit" class="btn btn-primary">
+                <h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6> Veritatis,
+                temporibus exercitationem tempore harum ullam sit beatae labore veniam
+                elit.
+
+                Veritatis, temporibus exercitationem tempore harum ullam sit beatae
+                labore veniam
+                <b>officia hic mollitia ab culpa voluptatem natus dolore incidunt
+                    earum </b>
+                </p>
+                <hr>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
                 </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Send Your Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <input type="submit" class="btn btn-primary">
+            </div>
         </aside>
 
 
