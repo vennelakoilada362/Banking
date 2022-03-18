@@ -16,60 +16,139 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style2.css">
-    <title>BON | HOME</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>CB | Accounts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 </head>
+
 <body>
-    <!-- NavBar -->
-    <ul style=" background-color: #1d0f00;padding:20px 0;">
-    
-        <li><a><i class="fas fa-hand-holding-usd"></i> BANK OF NIRVANA&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-       
-        <li><a href="accounts.php">Account Summary</a></li>
-        <li><a href="transactions.php">Transactions</a></li>
-        <li><a href="transfer.php">Transfer</a></li>
-        <li style="float:right"><a class="activered" href="logout.php">Log Out</a></li>
-        
-        <li style="float:right"><a class="activeblue" href="">Account Balance: Rs. <?php echo $result['balance'];?> </a></li>
-    </ul>
-    <!-- NavBar -->
+    <style>
+    body {
+        background-color: rgb(234, 238, 241);
+    }
+
+    nav {
+        background-color: rgb(107, 180, 245);
+    }
+
+    .h4 {
+        margin-top: auto;
+        margin-right: 10em;
+        margin-left: 1em;
+        color: rgb(0, 0, 0);
+        font-family: Georgia, "Times New Roman", Times, serif;
+    }
+
+    .nav-item a {
+        color: rgb(0, 0, 0);
+
+    }
+
+
+    .nav-item a:hover {
+        background-color: rgb(182, 233, 233);
+        color: blue;
+
+    }
+
+    .accbody {
+        border: 1px solid black;
+        margin-left: 15em;
+        margin-right: 15em;
+        margin-top: 3em;
+        padding: 2em;
+    }
+    </style>
+    <nav>
+
+        <ul class="nav nav-tabs justify-content" id="nav">
+            <h4 class="h4">Core Banking</h4 class="h4">
+            <li class="nav-item">
+                <a class="nav-link" href="accounts.php">Accounts Summary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="transactions.php">Transactions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="transfer.php">Transfer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Account Balance: <span style="color: purple">
+
+                        <?php echo $result['balance'];?>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.php">LogOut</a>
+            </li>
+
+        </ul>
+    </nav>
 
     <div class="accbody">
         <div class="header">
-            <h3 style="font-size: 1.2rem;text-align: center; padding-top: 10px; color: white;">Your account Information:</h3>
+            <h3 style="
+        font-family: Georgia;
+            font-size: 1.2rem;
+            text-align: center;
+            padding-top: 10px;
+            color: rgb(10, 10, 10);
+            
+          ">
+                Your Account Information:
+            </h3>
         </div>
-        <table>
-        <div class="accbd" >
-            <div class="darklight">
-                <p>Account No: <?php echo $result['accno'];?></p>
-            </div>
-            <div class="dark ">
-                <p>Holder Name: <?php echo $result['name'];?></p>
-            </div>
-            <div class="darklight">
-                <p>Balance : Rs.<?php echo $result['balance'];?></p>
-            </div>
-            <div class="dark">
-                <p>Email : <?php echo $result['email'];?></p>
-            </div>
-            <div class="darklight">
-                <p>Mobile No : <?php echo $result['phone'];?></p>
-            </div>
-            <div class="dark">
-                <p>Created On : <?php echo $result['timestamp'];?></p>
-            </div>
-            <div class="darklight">
-                <p>Branch Name:BANK OF NIRVANA</p>
-            </div>
-            <div class="dark">
-                <p>Branch Location: Andhra University</p>
-            </div>
-        </div>
+        <br>
+        <table class="table">
+
+            <tbody>
+                <tr>
+                    <th class="table-secondary" scope="row">Account No:</th>
+                    <td class="table-primary"><?php echo $result['accno'];?></td>
+                </tr>
+                <tr>
+                    <th scope="row">Holder Name:</th>
+                    <td class="table-info"><?php echo $result['name'];?></td>
+                </tr>
+                <tr>
+                    <th class="table-secondary" scope="row">Balance : Rs.</th>
+                    <td class="table-primary"><?php echo $result['balance'];?></td>
+                </tr>
+                <tr>
+                    <th scope="row">Email :</th>
+                    <td class="table-info"><?php echo $result['email'];?></td>
+                </tr>
+                <tr>
+                    <th class="table-secondary" scope="row">Mobile No : </th>
+                    <td class="table-primary"><?php echo $result['phone'];?></td>
+                </tr>
+                <tr>
+                    <th scope="row">Created On :</th>
+                    <td class="table-info"><?php echo $result['timestamp'];?></td>
+                </tr>
+                <tr>
+                    <th class="table-secondary" scope="row">Branch Name:</th>
+                    <td class="table-primary">CORE BANKING</td>
+                </tr>
+                <tr>
+                    <th scope="row">Branch Location:</th>
+                    <td class="table-info" colspan="2">Andhra University</td>
+                </tr>
+            </tbody>
         </table>
+
+
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

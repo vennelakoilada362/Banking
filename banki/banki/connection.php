@@ -11,4 +11,4 @@
         die("Connection Failed because ".mysqli_connect_error());
     }
 
-?> 
+?>
