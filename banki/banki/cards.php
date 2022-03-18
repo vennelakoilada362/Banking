@@ -80,7 +80,7 @@ margin-right: 53em;
                 <a class="nav-link" href="digital.php">NetBankings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://www.plantemoran.com/campaigns/wealth-management/speak-with-an-advisor-earn-for-more?utm_source=adwords&utm_term=financial%20advisor&utm_medium=&utm_campaign=&ad_id=575039297519&mt=b&src=s&ad_grp=129120953701&kw=financial%20advisor&campaign_id=15874865718&tgt=kwd-302317058595&network=adwords&gclid=Cj0KCQjw29CRBhCUARIsAOboZbJKJdVhv_7ASBVooPqB0prAz5wfYRB6RhwRODeLIT9Q_I1nzFUmuQgaAteqEALw_wcB">Support</a>
+                <a class="nav-link" href="support.php">Support</a>
             </li>
 
 
