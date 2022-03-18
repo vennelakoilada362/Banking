@@ -28,26 +28,26 @@
              
              <li class="nav-item" >
              
-             <a class="nav-link px-3" href="loans.php">Loans</a>
+             <a class="nav-link px-3" href="loans.html">Loans</a>
              
              </li>
              
              <li class="nav-item">
-                 <a class="nav-link  px-3 " href="digital.php">Net bankings</a>
+                 <a class="nav-link  px-3 " href="digital.html">Net bankings</a>
              </li>
              <li class="nav-item">
-                 <a class="nav-link px-3" href="cards.php">Cards</a>
+                 <a class="nav-link px-3" href="cards.html">Cards</a>
              </li>
              
              <li class="nav-item">
-                <a class="nav-link px-3" href="support.php">support</a>
+                <a class="nav-link px-3" href="support.html">support</a>
              </li>
              
              
              </ul>
              <ul style="padding-inline-start: 0px;">
                 <li class="nav-item">
-                    <a href="login.php" class="nav-link px-3" >Log in</i></a>
+                    <a href="login.html" class="nav-link px-3" >Log in</i></a>
                 </li>
                  
              </ul>
