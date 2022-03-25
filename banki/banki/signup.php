@@ -78,7 +78,7 @@
                 <form action="" class="formleft" method="">
 
                     <input type="text" id="accno" name="accno" class="form-control" minlength="6"
-                        placeholder="   Create your  account no." required>
+                        placeholder="Create your  account no." required>
                     <br>
                     <input type="text" id="name" name="name" class="form-control" placeholder="   Enter your name"
                         required>

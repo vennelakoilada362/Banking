@@ -14,9 +14,9 @@
     <style>
     body {
         background-color: rgb(234, 238, 241);
-      background-image: url("./images/cc1.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
+        background-image: url("./images/cc1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
 
     }
 
@@ -45,26 +45,25 @@
 
     }
 
-    .bg{
+    .bg {
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: white;
-        border: 1.5px black;  
+        border: 1.5px black;
         text-align: center;
         margin-top: 2em;
         margin-left: 45em;
-margin-right: 2em;
+        margin-right: 2em;
     }
 
-    .bg1{
+    .bg1 {
         font-family: Georgia, 'Times New Roman', Times, serif;
         color: white;
-        border: 1.5px black;  
+        border: 1.5px black;
         text-align: center;
         margin-top: 5em;
         margin-left: 1em;
-margin-right: 53em;
+        margin-right: 53em;
     }
-    
     </style>
     <nav>
 
@@ -87,12 +86,15 @@ margin-right: 53em;
         </ul>
     </nav>
     <div class="bg">
-       <h4>Payments enables businesses to collect all types of transactions & manage them with ease. With Podium, you don’t just collect payments.</h4>
+        <h4>Payments enables businesses to collect all types of transactions & manage them with ease. With Podium, you
+            don’t just collect payments.</h4>
     </div>
     <div class="bg1">
-        <h4> You collect opt-ins and reviews, too. Text Messaging. Local SEO & Insights. Attract More Customers. More Reviews. Highlights: Demo Available, Mobile App Available, Chat Option Available</h4>
+        <h4> You collect opt-ins and reviews, too. Text Messaging. Local SEO & Insights. Attract More Customers. More
+            Reviews. Highlights: Demo Available, Mobile App Available, Chat Option Available</h4>
     </div>
-    <footer style="border: 1px black; background-color: aliceblue; padding: 0.5em; text-align: center; margin-top: 51px;">
+    <footer
+        style="border: 1px black; background-color: aliceblue; padding: 0.5em; text-align: center; margin-top: 56px;">
         <p class="p1">
             © 2020 Copyright@CoreBanking.com
         </p>

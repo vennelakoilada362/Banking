@@ -18,7 +18,7 @@
 
     .h4 {
         margin-top: auto;
-        padding-right: 6em;
+        padding-right: 4em;
         margin-right: 24em;
         color: rgb(0, 0, 0);
         font-family: Georgia, "Times New Roman", Times, serif;
@@ -33,8 +33,9 @@
         color: blue;
     }
 
+
     .carousel-item {
-        height: 30em;
+        height: 34em;
         width: 100%;
     }
 
@@ -57,19 +58,26 @@
         margin-left: 60em;
     }
 
-    /* .forminputtext{
-  margin: 12px;
-  border-radius: 5px;
-} */
+    .h1 {
+        transition: 1s;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    .h1[data-scroll="in"] {
+        transform: translateY(0);
+        transition-delay: 0s;
+        opacity: 1;
+    }
     </style>
     <header>
 
         <nav>
 
             <ul class="nav nav-tabs justify-content-end" id="nav">
-                <h4 class="h4">Core Banking</h4 class="h4">
+                <h4 class="h4">HRMIS Banking</h4 class="h4">
                 <li class="nav-item">
-                    <a class="nav-link" href="digital.php">Loans</a>
+                    <a class="nav-link" href="loans.php">Loans</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="digital.php">NetBankings</a>
@@ -88,24 +96,12 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/sec.jpg" class="d-block w-100" alt="No Image Found...">
+                    <video class="video-fluid" autoplay>
+                        <source src="images/vid1.mp4" type="video/mp4">
+                    </video>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>NET BANKING</h5>
                         <p>Make your tansactions from anywhere :)</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/sec1.jpg" class="d-block w-100" alt="No Image Found...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Get Started</h5>
-                        <p>Send Money From The Us To 130+ Countries Within Minutes</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/sec3.jpg" class="d-block w-100" alt="No Image Found...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Global Transfers</h5>
-                        <p>We Charge As Little As Possible. No Subscription Fee</p>
                     </div>
                 </div>
             </div>
@@ -147,12 +143,18 @@
 
         <p class="p1">
 
-            © 2020 Copyright@CoreBanking.com
+            © 2020 Copyright@HRMISBanking.com
         </p>
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="./scroll.js"></script>
+    <script>
+    ScrollOut({
+        targets: "h1,h2,p,img",
+    });
     </script>
 </body>
 

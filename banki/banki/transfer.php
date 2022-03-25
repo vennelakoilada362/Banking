@@ -149,9 +149,6 @@
         </div>
 
         <div class="data-bs-spy=scroll">
-            <!-- <div class="dark ">
-                <p>Receiver Acc.No&emsp;|&emsp; Receiver Name</p>
-            </div> -->
             <table class='table table-sm'>
                 <thead>
                     <tr>
@@ -189,7 +186,6 @@
 </html>
 
 <?php
-
     error_reporting(0);
     $receiveraccno = $_GET['receiveraccno'];
     $sentamount = $_GET['sentamount'];
