@@ -53,7 +53,7 @@
         <nav>
 
             <ul class="nav nav-tabs justify-content-end" id="nav">
-                <h4 class="h4">Core Banking</h4 class="h4">
+                <h4 class="h4">HRMIS Banking</h4 class="h4">
                 <li class="nav-item">
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
@@ -73,7 +73,7 @@
     <section>
         <div class="formbody" style="  border: 2px solid black; background-color: aliceblue;  text-align: center;
     margin-top: 2em; padding-bottom: 2em; margin-left:15em ; margin-right: 15em; border-top-right-radius:10px;">
-            <h2>SIGNUP</h2>
+            <h2>SIGN UP</h2>
             <div class="signupleft" style="height: 75%;">
                 <form action="" class="formleft" method="">
 
@@ -106,7 +106,7 @@
 
                     <input type="submit" class="btn primary-btn" name="signup"
                         style=" background-color:rgb(66, 156, 240) ; width: 75%; margin-left: 15px; margin-top: 20px;"
-                        value="signup"></input>
+                        value="SIGN UP"></input>
                     <br>
                     <div class="signupright">
                         <p style="padding: 17px; color: rgb(10, 9, 9);  ">Already Have an account?</p>

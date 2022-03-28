@@ -68,7 +68,7 @@
     <nav>
 
         <ul class="nav nav-tabs justify-content-end" id="nav">
-            <h4 class="h4">Core Banking</h4 class="h4">
+            <h4 class="h4">HRMIS Banking</h4 class="h4">
             <li class="nav-item">
                 <a class="nav-link" href="index.php">Home</a>
             </li>
