@@ -53,6 +53,11 @@ nav {
     margin-top: 10em;
     text-align: left;
 }
+
+.carousel-item {
+    height: 34em;
+    width: 50%;
+}
 </style>
 <header>
 
@@ -77,14 +82,28 @@ nav {
     </nav>
 </header>
 <section>
-    <div class="h1">
-        <h5>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video class="video-fluid" autoplay>
+                    <source src="images/vid.mp4" type="video/mp4">
+                </video>
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <div class="h1">
+                        <h5>
 
-            The business account for sole traders, freelancers and the self employed. Apply today! Create customised
-            invoices and get instant payment notifications. Sign up in minutes! Automatic Bookkeeping. See Your Running
-            Tax Bill. Professional Invoices. Payment Alerts. Accounting Integration.
-        </h5>
+                            The business account for sole traders, freelancers and the self employed. Apply today!
+                            Create customised
+                            invoices and get instant payment notifications. Sign up in minutes! Automatic Bookkeeping.
+                            See Your Running
+                            Tax Bill. Professional Invoices. Payment Alerts. Accounting Integration.
+                        </h5>
+                    </div> -->
+                </div>
+            </div>
+        </div>
     </div>
+
 </section>
 
 <body>

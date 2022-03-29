@@ -26,7 +26,7 @@
 
     .h4 {
         margin-top: auto;
-        margin-right: 25em;
+        margin-right: 23em;
         padding-right: 3em;
         margin-left: 1em;
         color: rgb(0, 0, 0);

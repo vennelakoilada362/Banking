@@ -28,7 +28,7 @@
     .h4 {
         margin-top: auto;
         padding-right: 6em;
-        margin-right: 24em;
+        margin-right: 22em;
         color: rgb(0, 0, 0);
         font-family: Georgia, "Times New Roman", Times, serif;
     }
