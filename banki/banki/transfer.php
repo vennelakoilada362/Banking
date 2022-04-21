@@ -149,32 +149,33 @@
         </div>
 
         <div class="data-bs-spy=scroll">
-            <table class='table table-sm'>
-                <thead>
-                    <tr>
-                        <th scope='col'>Receiver Acc.No</th>
-                        <th scope='col'>Receiver Name</th>
-                    </tr>
-                </thead>
-            </table>
             <div class="darklight">
-                <?php
+                <table class='table table-sm'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Receiver Acc.No</th>
+                            <th scope='col'>Receiver Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
                     while ($result2 = mysqli_fetch_assoc($listdata)) {
                         if($user_accno != $result2['accno']){
-                            echo "<table class='table table-sm'>
-                               
-                                <tbody>
-                                  <tr>
-                                    <td>".$result2['accno']."</td>
-                                    <td>".$result2['name']."</td>
-                                  </tr>
-                                </tbody>
-                              </table>";
-
+                            echo "
                             
+                       
+                            <tr>
+                            <td>".$result2['accno']."</td>
+                            <td>".$result2['name']."</td>
+                            </tr>
+                                ";
+                                
+                                
+                            }
                         }
-                    }
-                ?>
+                        ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

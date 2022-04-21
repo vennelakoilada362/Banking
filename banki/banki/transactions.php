@@ -112,9 +112,10 @@
                 style="font-size: 1.2rem;text-align: center; padding-top: 10px; color: black; font-family: Georgia, 'Times New Roman', Times, serif;">
                 Your Transactions :</h3>
         </div>
-        <table class=" table-success">
-            <div>
-                <?php
+        <table class="table">
+            <tbody>
+                <div>
+                    <?php
                 $i = 0;
                 while ($result2 = mysqli_fetch_assoc($transactionsdata)) {
                     $sender = $result2['sender_id'];
@@ -123,25 +124,25 @@
                     {
                         if($user_accno == $sender){
                             if($i++%2==0){
-                                echo "<div class='d1'>
-                                <p>Debited: &nbsp;Rs.".$result2['amount']." transferred to Acc. No: ".$result2['receiver_id'].".</p>
-                                </div> <hr>";
+                                echo "<tr><div class='d1'>
+                                <td><p>Debited: &nbsp;Rs.".$result2['amount']." transferred to Acc. No: ".$result2['receiver_id'].".</p></td>
+                                </div> <hr></tr>";
                             } else {
-                                echo "<div class='d1' >
-                                <p>Debited: &nbsp;Rs.".$result2['amount']." transferred to Acc. No: ".$result2['receiver_id'].".</p>
-                                </div><hr>";
+                                echo "<tr><div class='d1' >
+                                <td><p>Debited: &nbsp;Rs.".$result2['amount']." transferred to Acc. No: ".$result2['receiver_id'].".</p></td>
+                                </div><hr></tr>";
                             }
 
                         }
                         else {
                             if($i++%2==0){
-                                echo "<div class='d1'>
-                                <p>Credited: &nbsp;Rs.".$result2['amount']." from Acc. No: ".$result2['receiver_id'].".</p>
-                                </div> <hr>";
+                                echo "<tr><div class='d1'>
+                                <td><p>Credited: &nbsp;Rs.".$result2['amount']." from Acc. No: ".$result2['receiver_id'].".</p></td>
+                                </div> <hr></tr>";
                             } else {
-                                echo "<divclass='d1' >
-                                <p>Credited: &nbsp;Rs.".$result2['amount']." from Acc. No: ".$result2['receiver_id'].".</p>
-                                </div> <hr>";
+                                echo "<tr><divclass='d1' >
+                                <td><p>Credited: &nbsp;Rs.".$result2['amount']." from Acc. No: ".$result2['receiver_id'].".</p></td>
+                                </div> <hr></tr>";
                             }
 
                         }
@@ -150,7 +151,8 @@
                 }
             ?>
 
-            </div>
+                </div>
+            </tbody>
         </table>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

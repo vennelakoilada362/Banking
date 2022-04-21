@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CB | netbankings</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-
 </head>
 <style>
 body {
@@ -31,7 +30,6 @@ nav {
 
 .nav-item a {
     color: rgb(0, 0, 0);
-
 }
 
 .p1 {
@@ -42,34 +40,30 @@ nav {
 .nav-item a:hover {
     background-color: rgb(182, 233, 233);
     color: blue;
-
 }
 
 .h1 {
     color: rgb(255, 255, 255);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 10em;
-    text-align: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 8em;
+    font-size: 15px;
+    justify-content: baseline;
 }
 
 .carousel-item {
     height: 34em;
-    width: 50%;
+    width: 100%;
 }
 </style>
 <header>
-
     <nav>
-
         <ul class="nav nav-tabs justify-content-end" id="nav">
-            <h4 class="h4">HRMIS Banking</h4 class="h4">
+            <h4 class="h4">HRMIS Banking</h4>
             <li class="nav-item">
                 <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="digital.php">Loans</a>
+                <a class="nav-link" href="loans.php">Loans</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="support.php">Support</a>
@@ -77,7 +71,6 @@ nav {
             <li class="nav-item">
                 <a class="nav-link" href="cards.php">Cards</a>
             </li>
-
         </ul>
     </nav>
 </header>
@@ -86,28 +79,25 @@ nav {
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <video class="video-fluid" autoplay>
-                    <source src="images/vid.mp4" type="video/mp4">
+                    <source src="images/vid2.mp4" type="video/mp4" />
                 </video>
-                <div class="carousel-caption d-none d-md-block">
-                    <!-- <div class="h1">
+                <div class="carousel-caption">
+                    <div class="h1">
                         <h5>
-
-                            The business account for sole traders, freelancers and the self employed. Apply today!
-                            Create customised
-                            invoices and get instant payment notifications. Sign up in minutes! Automatic Bookkeeping.
-                            See Your Running
-                            Tax Bill. Professional Invoices. Payment Alerts. Accounting Integration.
+                            The business account for sole traders, freelancers and the self
+                            employed. Apply today! Create customised invoices and get
+                            instant payment notifications. Sign up in minutes! Automatic
+                            Bookkeeping. See Your Running Tax Bill. Professional Invoices.
+                            Payment Alerts. Accounting Integration.
                         </h5>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </section>
 
 <body>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
