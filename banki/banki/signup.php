@@ -10,8 +10,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <script>
-
+    <script type="text/javascript">
+    chkpwd = function(validate) {
+        var str = document.getElementById('pwd').value;
+        if (str.lenght < 8) {
+            document.getElementById("pass").innerHTML = "Password must be 8 characters"
+            document.getElementById("pass").style.color = "Red";
+            return ("too_short");
+        } else if (str.search(/[0-9]/) == -1) {
+            document.getElementById("pass").innerHTML = "Atleast 1 numerical value must be enter "
+            document.getElementById("pass").style.color = "Red";
+            return ("no_number");
+        } else if (str.search(/[a-z]/) == -1) {
+            document.getElementById("pass").innerHTML = "Atleast 1 small letter must be enter "
+            document.getElementById("pass").style.color = "Red";
+            return ("no_letter");
+        } else if (str.search(/[A-Z]/) == -1) {
+            document.getElementById("pass").innerHTML = "Atleast 1 UPPER CASE must be enter "
+            document.getElementById("pass").style.color = "Red";
+            return ("no_Uletter");
+        } else if (str.search(/[!\@\#\$\%\^\&\(\)\_\+\.\,\;\:]\]/) == -1) {
+            document.getElementById("pass").innerHTML = "Atleast 1 special letter must be enter "
+            document.getElementById("pass").style.color = "Red";
+            return ("no_aletter");
+        }
+        document.getElementById("pass").innerHTML = "Successful!"
+        document.getElementById("pass").style.color = "Green";
+        return ("ok");
+    }
     </script>
 </head>
 
@@ -52,13 +78,14 @@
     <header>
         <nav>
 
+
             <ul class="nav nav-tabs justify-content-end" id="nav">
                 <h4 class="h4">HRMIS Banking</h4 class="h4">
                 <li class="nav-item">
                     <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="digital.php">Loans</a>
+                    <a class="nav-link" href="loans.php">Loans</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="digital.php">NetBankings</a>
@@ -91,6 +118,7 @@
                     <br>
                     <input type="password" id="pwd" name="password" class="form-control"
                         placeholder="   Enter your Password" required>
+                    <p id="pass"></p>
                     <br>
                     <input type="text" id="balance" name="balance" class="form-control"
                         placeholder="   Enter your initial deposit." required>
@@ -104,7 +132,7 @@
                     </ul>
                     <input type="checkbox" id="terms" name="terms">&nbsp;&nbsp;I agree to all the terms above.
 
-                    <input type="submit" class="btn primary-btn" name="signup"
+                    <input type="submit" class="btn primary-btn" onclick="chkpwd()" name="signup"
                         style=" background-color:rgb(66, 156, 240) ; width: 75%; margin-left: 15px; margin-top: 20px;"
                         value="SIGN UP"></input>
                     <br>

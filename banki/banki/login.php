@@ -73,7 +73,7 @@
             <div
                 style=" margin-left: 25%; margin-right: 11%; height: 40vh;text-align:center;margin-top:6%;width: 50%;border-radius: 10px;">
                 <form action="" class="formleft" method="post">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="Enter your name"
+                    <input type="text" id="username" name="username" class="form-control" place holder="Enter your name"
                         required>
                     <br>
                     <input type="password" id="pwd" name="password" class="form-control"
