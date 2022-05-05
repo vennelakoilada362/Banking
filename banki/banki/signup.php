@@ -118,7 +118,7 @@
                     <br>
                     <input type="password" id="pwd" name="password" class="form-control"
                         placeholder="   Enter your Password" required>
-                    <p id="pass"></p>
+                    <!-- <p id="pass"></p> -->
                     <br>
                     <input type="text" id="balance" name="balance" class="form-control"
                         placeholder="   Enter your initial deposit." required>

@@ -245,7 +245,7 @@
     </section>
     <footer style="border: 1px black; background-color: aliceblue; padding: 0.5em; text-align: center; margin-top:2em;">
         <p class="p1">
-            © 2020 Copyright@HRMISBanking.com
+            © 2022Copyright@HRMISBanking.com
         </p>
 
     </footer>
